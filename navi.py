@@ -53,25 +53,27 @@ def navi(place_mark,place_agora):
 
 
 if __name__ == '__main__':
+
     count = 0
-    place_agora=np.zeros(4,3)
+    place_agora=np.zeros((4,3),dtype=float)
     # 配列の意味：4地点，ｘ，ｙ，yaw角の３情報
     # １つ目の地点
-    place_agora(0,0)=
-    place_agora(0,1)=
-    place_agora(0,2)=
+    np.put(place_agora, [0], 0.538268230631)
+    np.put(place_agora, [1], 0.0938405069591)
+    np.put(place_agora, [2], 2.92475126107)
     # 2つ目の地点
-    place_agora(1,0)=
-    place_agora(1,1)=
-    place_agora(1,2)=
+    np.put(place_agora, [3], 0)
+    np.put(place_agora, [4], 0)
+    np.put(place_agora, [5], 0)
+
     # 3つ目の地点
-    place_agora(2,0)=
-    place_agora(2,1)=
-    place_agora(2,2)=
+    np.put(place_agora, [6], 0)
+    np.put(place_agora, [7], 0)
+    np.put(place_agora, [8], 0)
     # 4つ目の地点
-    place_agora(3,0)=
-    place_agora(3,1)=
-    place_agora(3,2)=
+    np.put(place_agora, [9], 0)
+    np.put(place_agora, [10], 0)
+    np.put(place_agora, [11], 0)
 
     while not rospy.is_shutdown():
         navi(count,place_agora)
